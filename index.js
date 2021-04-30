@@ -39,6 +39,6 @@ const {
   app.use(BASE_PATH, router);
 
   app.listen(PORT, () => {
-    console.log(`bull-board listening on host:${PORT}${DASHBOARD_ROOT_PATH}`);
+    console.log(`bull-board listening on host:${PORT}${BASE_PATH}`);
   });
-})
+})();
