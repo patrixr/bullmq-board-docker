@@ -1,0 +1,19 @@
+{
+  "name": "bullmq-board-docker",
+  "version": "1.0.0",
+  "description": "Docker image for a BullMQ bull-board",
+  "repository": "git@github.com:patrixr/bullmq-board-docker.git",
+  "author": "Patrick R",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "bull-board": "^2.0.1",
+    "bullmq": "^1.22.2",
+    "express": "^4.17.1",
+    "ioredis": "^4.17.3",
+    "lodash": "^4.17.21"
+  }
+}
