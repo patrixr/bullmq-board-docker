@@ -21,7 +21,7 @@ const {
     return _.chain(keys)
     .map(k => k.replace(/^.+?:(.+?):.+?$/, '$1'))
     .uniq()
-    .map(name => new Queue(name, REDIS_URL))
+    .map(name => new Queue(name, { connection: redis }))
     .value();
   }
 
