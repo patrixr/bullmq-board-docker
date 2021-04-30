@@ -6,7 +6,7 @@ ENV NODE_ENV production
 WORKDIR /app
 
 COPY package.json .
-COPY yarn.lock .
+COPY package-lock.json .
 
 RUN npm install
 
