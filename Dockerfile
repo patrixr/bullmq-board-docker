@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM node:16-buster-slim
 
 ENV PORT 3000
 ENV NODE_ENV production
