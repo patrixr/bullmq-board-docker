@@ -73,6 +73,8 @@ const start = async () => {
     (req, res) => res.redirect('/ui'),
   );
 
+  app.get('/', (req, res) => res.redirect('/ui'));
+
   app.use(
     '/ui',
     ensureLoggedIn({ redirectTo: LOGIN_PATH }),
